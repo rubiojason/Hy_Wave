@@ -1,0 +1,868 @@
+
+$main-color: rgb(255, 255, 255); 
+$secondary-color: rgb(3, 205, 255); 
+$text-color: rgb(20, 20, 20); 
+$nav-text-color: rgb(255, 255, 255); 
+$button-hover-color: rgb(12, 196, 242); 
+
+.center {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+body {
+    background-color: $main-color; 
+    color: $text-color; 
+    font-size: 16px; 
+    overflow-y: scroll; 
+    overflow-x: hidden;
+}
+
+button {
+    width: 200px; 
+    height: 50px; 
+    background-color: $secondary-color; 
+    border: 0px solid rgb(0, 0, 0); 
+    border-radius: 30px; 
+    color: $nav-text-color; 
+    font-weight: 600; 
+    cursor: pointer; 
+    transition: all 300ms ease; 
+
+    &:hover {
+        background-color: $button-hover-color; 
+        color: rgb(245, 245, 245); 
+    }
+}
+
+.top-of-page nav .left-nav h3 {
+    cursor: pointer; 
+}
+
+.main-page {
+    width: 100%; 
+    height: auto; 
+    display: flex; 
+    flex-direction: column; 
+    position: relative; 
+    align-items: center; 
+
+    .nav-open-up {
+        display: none; 
+        position: fixed; 
+        width: 100%;  
+        top: 0%; 
+        right: 0%;
+        bottom: 0%;  
+        background-color: $main-color;
+        z-index: 10; 
+        align-items: center;
+        flex-direction: column; 
+        opacity: 0; 
+        overflow: auto; 
+
+
+        .top-nav-x-container {
+            width: 90%; 
+            height: 10vh; 
+            display: flex; 
+            justify-content: flex-end;
+            margin: 20px 0px; 
+
+            img {
+                width: 50px; 
+                height: 50px; 
+                cursor: pointer; 
+                transition: all 500ms ease; 
+
+                &:hover {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .bottom-nav-container {
+            width: 90%; 
+            height: 80vh; 
+            @extend .center; 
+            flex-direction: column; 
+            justify-content: space-evenly;
+            align-items: flex-end; 
+
+            div a {
+                color: $secondary-color; 
+                font-size: 1.5em; 
+                font-weight: 700; 
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                text-decoration: none; 
+                cursor: pointer; 
+                transition: all 300ms ease; 
+
+                &:hover {
+                    color: $button-hover-color; 
+                }
+            }
+        }
+    }
+}
+
+.top-of-page {
+    position: relative; 
+    width: 100%; 
+    height: 100vh; 
+    min-height: 500px; 
+    display: flex; 
+    flex-direction: column; 
+    background: url("https://images.pexels.com/photos/1430677/pexels-photo-1430677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    nav {
+        position: static;  
+        top: 0%; 
+        width: 100%; 
+        height: 50px;
+        color: $nav-text-color; 
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.25); 
+
+        .left-nav {
+            width: 30%; 
+            height: 100%; 
+            @extend .center; 
+        }
+
+        .right-nav {
+            width: 60%; 
+            height: 100%; 
+            display: flex; 
+            flex-direction: row; 
+            justify-content: flex-end;
+            align-items: center; 
+            font-weight: 400; 
+            font-size: 1.25em; 
+
+            .nav-links {
+                cursor: pointer; 
+            }
+
+            .hamburger-div {
+                width: 45px; 
+                height: 35px; 
+                display: flex; 
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column; 
+                cursor: pointer; 
+
+                div {
+                    width: 80%; 
+                    height: 1px;
+                    border-top: 2px solid $main-color; 
+                }
+            }
+        }
+    }
+
+a {
+    color: $main-color; 
+    text-decoration: none;
+    transition: all 300ms ease; 
+
+    &:hover {
+        color: rgb(230, 230, 230); 
+    }
+}
+
+    .center-box-div {
+        width: 100%; 
+        height: 80vh;  
+        background-color: rgba(0, 0, 0, 0); 
+        @extend .center; 
+        
+        .center-box {
+            width: 80%; 
+            height: 80%; 
+            background-color: $main-color;
+            border-radius: 10px; 
+            @extend .center; 
+            flex-direction: column; 
+            justify-content: space-evenly;
+            padding: 20px 0px; 
+        
+            p {
+                width: 70%; 
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+.middle-page-container {
+    width: 100%; 
+    height: auto; 
+    padding: 15px 0px; 
+    @extend .center; 
+    justify-content: space-evenly;
+    flex-direction: column; 
+
+    .img-select-div {
+        position: relative; 
+        width: 80%; 
+        height: 150px; 
+        background-color: rgb(40, 40, 40);  
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden; 
+        margin: 20px 0px; 
+
+        .inside-img-div {
+            position: absolute; 
+            width: 100%; 
+            height: auto; 
+            left: 0%; 
+            top: 0%; 
+            transition: all 1200ms ease;
+            opacity: 0.5; 
+            cursor: pointer; 
+
+            &:hover {
+            transform: scale(1.05); 
+            transition: 1000ms ease;
+            opacity: 1; 
+            }
+        }
+
+        .img-text-overlay {
+            width: 100px;
+            position: absolute; 
+            left: 50%; 
+            top: 30%; 
+            margin-left: -50px; 
+            color: $main-color; 
+            text-align: center; 
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            font-weight: 300; 
+            font-size: 1.25em; 
+            cursor: pointer; 
+            pointer-events: none;
+        }
+    }
+}
+
+.bottom-nav {
+    width: 100%; 
+    height: 50vh; 
+    min-height: 300px; 
+    background-color: black;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-items: center; 
+    
+    .bottom-left {
+        width: 80%; 
+        height: 75%; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: space-evenly;
+        align-items: flex-start; 
+    }
+
+    .bottom-right {
+        width: 40%; 
+        height: 75%; 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+        justify-items: center;
+        align-items: center;
+        display: none; 
+    }
+}
+
+.bottom-top-text {
+    color: $secondary-color; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-weight: 100; 
+}
+
+.bottom-middle-text {
+    color: $nav-text-color; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-weight: 400; 
+    font-size: 1.5em; 
+}
+
+.bottom-bottom-text {
+    color: $nav-text-color; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-weight: 100; 
+}
+
+.other {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    outline: none; 
+    font-weight: 600;
+    cursor: pointer;
+    background: linear-gradient(to right, $secondary-color 50%, $secondary-color 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 300ms ease;
+
+    &:hover {
+        background-position: 0 100%;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 600px) {
+    p {
+        font-size: 1.15em; 
+    }
+
+    button {
+        font-size: 1.05em; 
+        font-weight: 100; 
+    }
+
+    .middle-page-container .img-select-div {
+        height: 225px; 
+    }
+
+    .middle-page-container .img-select-div .img-text-overlay {
+        font-size: 1.5em; 
+    }
+
+    .bottom-top-text {
+        font-size: 1.15em; 
+    }
+
+    .bottom-middle-text {
+        font-size: 1.65em; 
+    }
+
+    .bottom-bottom-text {
+        font-size: 1.15em; 
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    p {
+        font-size: 1.3em; 
+    }
+
+    button {
+        font-weight: 100; 
+        font-size: 1.1em; 
+    }
+
+    .middle-page-container .img-select-div {
+        height: 250px; 
+    }
+
+    .middle-page-container .img-select-div .img-text-overlay {
+        font-size: 1.75em; 
+    }
+
+    .bottom-top-text {
+        font-size: 1.25em; 
+    }
+
+    .bottom-middle-text {
+        font-size: 1.85em; 
+    }
+
+    .bottom-bottom-text {
+        font-size: 1.25em; 
+    } 
+
+    .top-of-page nav .left-nav h3 {
+        font-size: 1.5em; 
+    }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+    p {
+        font-size: 1.4em; 
+    }
+
+    button {
+        width: 300px; 
+        height: 60px; 
+        font-weight: 100; 
+        font-size: 1.25em; 
+    }
+
+    .middle-page-container .img-select-div {
+        height: 250px; 
+        width: 55%; 
+    }
+
+    .middle-page-container .img-select-div .img-text-overlay {
+        font-size: 1.75em; 
+    }
+
+    .bottom-top-text {
+        font-size: 1.25em; 
+    }
+
+    .bottom-middle-text {
+        font-size: 1.85em; 
+    }
+
+    .bottom-bottom-text {
+        font-size: 1.25em; 
+    } 
+
+    .top-of-page nav .left-nav h3 {
+        font-size: 1.5em; 
+    }
+}
+
+@media only screen and (min-width: 1101px) and (max-width: 1300px) {
+    .top-of-page .center-box-div .center-box p {
+        font-size: 1.5em; 
+    }
+
+    button {
+        width: 300px; 
+        height: 60px; 
+        font-weight: 100; 
+        font-size: 1.25em; 
+    }
+
+    .middle-page-container .img-select-div {
+        height: 250px; 
+        width: 45%; 
+    }
+
+    .middle-page-container .img-select-div .img-text-overlay {
+        font-size: 1.9em; 
+    }
+
+    .bottom-top-text {
+        font-size: 1.25em; 
+    }
+
+    .bottom-middle-text {
+        font-size: 1.85em; 
+    }
+
+    .bottom-bottom-text {
+        font-size: 1.25em; 
+    } 
+
+    .top-of-page nav .left-nav h3 {
+        font-size: 1.5em; 
+    }
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1500px) {
+    .top-of-page .center-box-div .center-box p {
+        font-size: 1.65em; 
+    }
+
+    button {
+        width: 300px; 
+        height: 60px; 
+        font-weight: 100; 
+        font-size: 1.25em; 
+    }
+
+    .middle-page-container .img-select-div {
+        height: 250px; 
+        width: 45%; 
+    }
+
+    .middle-page-container .img-select-div .img-text-overlay {
+        font-size: 1.9em; 
+    }
+
+    .bottom-top-text {
+        font-size: 1.45em; 
+    }
+
+    .bottom-middle-text {
+        font-size: 1.95em; 
+    }
+
+    .bottom-bottom-text {
+        font-size: 1.45em; 
+    } 
+
+    .top-of-page nav .left-nav h3 {
+        font-size: 1.5em; 
+    }
+
+    .bottom-nav .bottom-left {
+        width: 40%; 
+    }
+
+    .bottom-nav .bottom-right {
+        width: 40%; 
+        display: grid;  
+        font-size: 1.15em; 
+    }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 1700px) {
+    .top-of-page .center-box-div {
+        justify-content: flex-end;
+    }
+
+    .top-of-page .center-box-div .center-box {
+        margin-right: 75px; 
+        width: 55%; 
+    }
+
+    .top-of-page .center-box-div .center-box p {
+        font-size: 1.8em; 
+    }
+
+    button {
+        width: 325px; 
+        height: 70px; 
+        font-weight: 100; 
+        font-size: 1.5em; 
+    }
+
+    .middle-page-container .img-select-div {
+        height: 400px; 
+        width: 45%; 
+    }
+
+    .middle-page-container .img-select-div .img-text-overlay {
+        font-size: 2.25em; 
+    }
+
+    .bottom-top-text {
+        font-size: 1.65em; 
+    }
+
+    .bottom-middle-text {
+        font-size: 2.15em; 
+    }
+
+    .bottom-bottom-text {
+        font-size: 1.65em; 
+    } 
+
+    .top-of-page nav .left-nav h3 {
+        font-size: 1.85em; 
+    }
+
+    .bottom-nav .bottom-left {
+        width: 40%; 
+    }
+
+    .bottom-nav .bottom-right {
+        width: 40%; 
+        display: grid;  
+        font-size: 1.35em; 
+    }
+
+    .top-of-page nav {
+        height: 75px; 
+    }
+
+    .top-of-page nav .right-nav {
+        justify-content: space-evenly;
+    }
+
+    .main-page .nav-open-up .bottom-nav-container div a {
+        font-size: 1.75em; 
+    }
+}
+
+@media only screen and (min-width: 1701px) and (max-width: 2000px) {
+    .top-of-page .center-box-div {
+        justify-content: flex-end;
+    }
+
+    .top-of-page .center-box-div .center-box {
+        margin-right: 75px; 
+        width: 55%; 
+    }
+
+    .top-of-page .center-box-div .center-box p {
+        font-size: 2em; 
+        line-height: 1.5em; 
+    }
+
+    button {
+        width: 375px; 
+        height: 80px; 
+        font-weight: 100; 
+        font-size: 1.75em; 
+    }
+
+    .middle-page-container .img-select-div {
+        height: 400px; 
+        width: 45%; 
+    }
+
+    .middle-page-container .img-select-div .img-text-overlay {
+        font-size: 2.5em; 
+    }
+
+    .bottom-top-text {
+        font-size: 1.85em; 
+    }
+
+    .bottom-middle-text {
+        font-size: 2.35em; 
+    }
+
+    .bottom-bottom-text {
+        font-size: 1.85em; 
+    } 
+
+    .top-of-page nav .left-nav h3 {
+        font-size: 2em; 
+    }
+
+    .bottom-nav .bottom-left {
+        width: 40%; 
+    }
+
+    .bottom-nav .bottom-right {
+        width: 40%; 
+        display: grid;  
+        font-size: 1.5em; 
+    }
+
+    .top-of-page nav {
+        height: 75px; 
+    }
+
+    .top-of-page nav .right-nav {
+        justify-content: space-evenly;
+        font-size: 1.75em; 
+    }
+
+    .main-page .nav-open-up .bottom-nav-container div a {
+        font-size: 2em; 
+    }
+}
+
+@media only screen and (min-width: 2001px) and (max-width: 3000px) {
+    .top-of-page .center-box-div {
+        justify-content: flex-end;
+    }
+
+    .top-of-page .center-box-div .center-box {
+        margin-right: 75px; 
+        width: 55%; 
+    }
+
+    .top-of-page .center-box-div .center-box p {
+        font-size: 2.5em; 
+        line-height: 1.5em; 
+    }
+
+    button {
+        width: 550px; 
+        height: 110px; 
+        font-weight: 100; 
+        font-size: 2.25em; 
+    }
+
+    .middle-page-container .img-select-div {
+        height: 600px; 
+        width: 45%; 
+    }
+
+    .middle-page-container .img-select-div .img-text-overlay {
+        font-size: 3.5em; 
+    }
+
+    .bottom-top-text {
+        font-size: 2.5em; 
+    }
+
+    .bottom-middle-text {
+        font-size: 3em; 
+    }
+
+    .bottom-bottom-text {
+        font-size: 2.5em; 
+    } 
+
+    .top-of-page nav .left-nav h3 {
+        font-size: 2.5em; 
+    }
+
+    .bottom-nav .bottom-left {
+        width: 40%; 
+    }
+
+    .bottom-nav .bottom-right {
+        width: 40%; 
+        display: grid;  
+        font-size: 2.25em; 
+    }
+
+    .top-of-page nav {
+        height: 100px; 
+    }
+
+    .top-of-page nav .right-nav {
+        justify-content: space-evenly;
+        font-size: 2.25em; 
+    }
+
+    .main-page .nav-open-up .bottom-nav-container div a {
+        font-size: 2.5em; 
+    }
+}
+
+@media only screen and (min-width: 3001px) and (max-width: 4000px) {
+    .top-of-page .center-box-div {
+        justify-content: flex-end;
+    }
+
+    .top-of-page .center-box-div .center-box {
+        margin-right: 75px; 
+        width: 55%; 
+    }
+
+    .top-of-page .center-box-div .center-box p {
+        font-size: 3.75em; 
+        line-height: 1.5em; 
+    }
+
+    button {
+        width: 675px; 
+        height: 150px; 
+        font-weight: 100; 
+        font-size: 3em; 
+    }
+
+    .middle-page-container .img-select-div {
+        height: 800px; 
+        width: 45%; 
+    }
+
+    .middle-page-container .img-select-div .img-text-overlay {
+        font-size: 4.5em; 
+    }
+
+    .bottom-top-text {
+        font-size: 3.5em; 
+    }
+
+    .bottom-middle-text {
+        font-size: 4.5em; 
+    }
+
+    .bottom-bottom-text {
+        font-size: 3.5em; 
+    } 
+
+    .top-of-page nav .left-nav h3 {
+        font-size: 3.75em; 
+    }
+
+    .bottom-nav .bottom-left {
+        width: 40%; 
+    }
+
+    .bottom-nav .bottom-right {
+        width: 40%; 
+        display: grid;  
+        font-size: 2.75em; 
+    }
+
+    .top-of-page nav {
+        height: 150px; 
+    }
+
+    .top-of-page nav .right-nav {
+        justify-content: space-evenly;
+        font-size: 3em; 
+    }
+
+    .main-page .nav-open-up .bottom-nav-container div a {
+        font-size: 3em; 
+    }
+}
+
+@media only screen and (min-width: 4001px) {
+    .top-of-page .center-box-div {
+        justify-content: flex-end;
+    }
+
+    .top-of-page .center-box-div .center-box {
+        margin-right: 75px; 
+        width: 55%; 
+    }
+
+    .top-of-page .center-box-div .center-box p {
+        font-size: 4.5em; 
+        line-height: 1.5em; 
+    }
+
+    button {
+        width: 750px; 
+        height: 175px; 
+        font-weight: 100; 
+        font-size: 3.75em; 
+    }
+
+    .middle-page-container .img-select-div {
+        height: 800px; 
+        width: 45%; 
+    }
+
+    .middle-page-container .img-select-div .img-text-overlay {
+        font-size: 5.25em; 
+    }
+
+    .bottom-top-text {
+        font-size: 4em; 
+    }
+
+    .bottom-middle-text {
+        font-size: 5em; 
+    }
+
+    .bottom-bottom-text {
+        font-size: 4em; 
+    } 
+
+    .top-of-page nav .left-nav h3 {
+        font-size: 4.25em; 
+    }
+
+    .bottom-nav .bottom-left {
+        width: 40%; 
+    }
+
+    .bottom-nav .bottom-right {
+        width: 40%; 
+        display: grid;  
+        font-size: 3.5em; 
+    }
+
+    .top-of-page nav {
+        height: 175px; 
+    }
+
+    .top-of-page nav .right-nav {
+        justify-content: space-evenly;
+        font-size: 3.5em; 
+    }
+
+    .main-page .nav-open-up .bottom-nav-container div a {
+        font-size: 3.25em; 
+    }
+}
