@@ -10,15 +10,15 @@ function PageContainer() {
         <BrowserRouter>
             <Switch>
 
-                <Redirect exact from="/" to="/lorem/home" />
+                <Redirect exact from="/HyWave" to="/HyWave/home" />
                     
-                <Route path="/lorem/home" component={Main} /> 
+                <Route path="/Hywave/home" component={Main} /> 
 
-                <Route path="/lorem/ocean" component={Ocean} />
+                <Route path="/HyWave/ocean" component={Ocean} />
 
-                <Route path="/lorem/resorts" component={Resorts} />
+                <Route path="/HyWave/resorts" component={Resorts} />
 
-                <Route path="/lorem/animals" component={Animals} />
+                <Route path="/HyWave/animals" component={Animals} />
 
             </Switch>
         </BrowserRouter>

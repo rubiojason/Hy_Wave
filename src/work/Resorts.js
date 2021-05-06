@@ -85,16 +85,16 @@ function Resorts() {
                 </div>
                 <div className="bottom-nav-container">
                     <div>
-                        <Link to="/lorem/home">Home</Link>
+                        <Link to="/HyWave/home">Home</Link>
                     </div>
                     <div>
-                        <Link to="/lorem/animals">Animals</Link>
+                        <Link to="/HyWave/animals">Animals</Link>
                     </div>
                     <div>
-                        <Link to="/lorem/ocean">Oceans</Link>
+                        <Link to="/HyWave/ocean">Oceans</Link>
                     </div>
                     <div>
-                        <Link to="/lorem/resorts">Resorts</Link>
+                        <Link to="/HyWave/resorts">Resorts</Link>
                     </div>
                 </div>
             </div>
@@ -103,7 +103,7 @@ function Resorts() {
                 <nav>
                     <div className="left-nav">
                         <h3>
-                            <Link to="/lorem/home">
+                            <Link to="/HyWave/home">
                                 HyWave
                             </Link>
                         </h3>
@@ -113,17 +113,17 @@ function Resorts() {
                             size.width >=  1500 ? 
                             <div className="right-nav">
                                 <div className="nav-links">
-                                    <Link to="/lorem/ocean">
+                                    <Link to="/HyWave/ocean">
                                         Oceans
                                     </Link>
                                 </div>
                                 <div className="nav-links">
-                                    <Link to="/lorem/animals">
+                                    <Link to="/HyWave/animals">
                                         Animals
                                     </Link>
                                 </div>
                                 <div className="nav-links">
-                                    <Link to="/lorem/resorts">
+                                    <Link to="/HyWave/resorts">
                                         Resorts
                                     </Link>
                                 </div>
