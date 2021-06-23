@@ -140,17 +140,17 @@ function Main() {
 
             <div className="middle-page-container">
 
-                <a className="img-select-div" href="/lorem/ocean">
+                <a className="img-select-div" href="/HyWave/ocean">
                     <img className="inside-img-div" alt="" src="https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
                     <div className="img-text-overlay">Oceans</div>
                 </a>
 
-                <a className="img-select-div" href="/lorem/animals">
+                <a className="img-select-div" href="/HyWave/animals">
                     <img className="inside-img-div" alt="" src="https://images.pexels.com/photos/64219/dolphin-marine-mammals-water-sea-64219.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
                     <div className="img-text-overlay">Animals</div>
                 </a>
 
-                <a className="img-select-div" href="/lorem/resorts">
+                <a className="img-select-div" href="/HyWave/resorts">
                     <img className="inside-img-div" alt="" src="https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
                     <div className="img-text-overlay">Resorts</div>
                 </a>
