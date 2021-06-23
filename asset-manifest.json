@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Hy_Wave/static/css/main.99a4b8ed.chunk.css",
+    "main.js": "/Hy_Wave/static/js/main.521ecc41.chunk.js",
+    "main.js.map": "/Hy_Wave/static/js/main.521ecc41.chunk.js.map",
+    "runtime-main.js": "/Hy_Wave/static/js/runtime-main.a24c306c.js",
+    "runtime-main.js.map": "/Hy_Wave/static/js/runtime-main.a24c306c.js.map",
+    "static/js/2.8cd1cfd0.chunk.js": "/Hy_Wave/static/js/2.8cd1cfd0.chunk.js",
+    "static/js/2.8cd1cfd0.chunk.js.map": "/Hy_Wave/static/js/2.8cd1cfd0.chunk.js.map",
+    "static/js/3.03dee24c.chunk.js": "/Hy_Wave/static/js/3.03dee24c.chunk.js",
+    "static/js/3.03dee24c.chunk.js.map": "/Hy_Wave/static/js/3.03dee24c.chunk.js.map",
+    "index.html": "/Hy_Wave/index.html",
+    "static/css/main.99a4b8ed.chunk.css.map": "/Hy_Wave/static/css/main.99a4b8ed.chunk.css.map",
+    "static/js/2.8cd1cfd0.chunk.js.LICENSE.txt": "/Hy_Wave/static/js/2.8cd1cfd0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a24c306c.js",
+    "static/js/2.8cd1cfd0.chunk.js",
+    "static/css/main.99a4b8ed.chunk.css",
+    "static/js/main.521ecc41.chunk.js"
+  ]
+}
