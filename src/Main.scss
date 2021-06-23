@@ -654,7 +654,7 @@ a {
     }
 }
 
-@media only screen and (min-width: 2001px) and (max-width: 3000px) {
+@media only screen and (min-width: 2000px) and (max-width: 2200px) {
     .top-of-page .center-box-div {
         justify-content: flex-end;
     }
@@ -665,40 +665,40 @@ a {
     }
 
     .top-of-page .center-box-div .center-box p {
-        font-size: 2.5em; 
+        font-size: 2em; 
         line-height: 1.5em; 
     }
 
     button {
-        width: 550px; 
-        height: 110px; 
+        width: 375px; 
+        height: 80px; 
         font-weight: 100; 
-        font-size: 2.25em; 
+        font-size: 1.75em; 
     }
 
     .middle-page-container .img-select-div {
-        height: 600px; 
+        height: 400px; 
         width: 45%; 
     }
 
     .middle-page-container .img-select-div .img-text-overlay {
-        font-size: 3.5em; 
+        font-size: 2.5em; 
     }
 
     .bottom-top-text {
-        font-size: 2.5em; 
+        font-size: 1.85em; 
     }
 
     .bottom-middle-text {
-        font-size: 3em; 
+        font-size: 2.35em; 
     }
 
     .bottom-bottom-text {
-        font-size: 2.5em; 
+        font-size: 1.85em; 
     } 
 
     .top-of-page nav .left-nav h3 {
-        font-size: 2.5em; 
+        font-size: 2em; 
     }
 
     .bottom-nav .bottom-left {
@@ -708,24 +708,32 @@ a {
     .bottom-nav .bottom-right {
         width: 40%; 
         display: grid;  
-        font-size: 2.25em; 
+        font-size: 1.5em; 
     }
 
     .top-of-page nav {
-        height: 100px; 
+        height: 75px; 
     }
 
     .top-of-page nav .right-nav {
         justify-content: space-evenly;
-        font-size: 2.25em; 
+        font-size: 1.75em; 
     }
 
     .main-page .nav-open-up .bottom-nav-container div a {
-        font-size: 2.5em; 
+        font-size: 2em; 
+    }
+
+    .bottom-nav .bottom-left {
+        width: 20%; 
+    }
+
+    .bottom-nav .bottom-right {
+        width: 20%; 
     }
 }
 
-@media only screen and (min-width: 3001px) and (max-width: 4000px) {
+@media only screen and (min-width: 2200px) {
     .top-of-page .center-box-div {
         justify-content: flex-end;
     }
@@ -736,40 +744,40 @@ a {
     }
 
     .top-of-page .center-box-div .center-box p {
-        font-size: 3.75em; 
+        font-size: 2em; 
         line-height: 1.5em; 
     }
 
     button {
-        width: 675px; 
-        height: 150px; 
+        width: 375px; 
+        height: 80px; 
         font-weight: 100; 
-        font-size: 3em; 
+        font-size: 1.75em; 
     }
 
     .middle-page-container .img-select-div {
-        height: 800px; 
+        height: 400px; 
         width: 45%; 
     }
 
     .middle-page-container .img-select-div .img-text-overlay {
-        font-size: 4.5em; 
+        font-size: 2.5em; 
     }
 
     .bottom-top-text {
-        font-size: 3.5em; 
+        font-size: 1.85em; 
     }
 
     .bottom-middle-text {
-        font-size: 4.5em; 
+        font-size: 2.35em; 
     }
 
     .bottom-bottom-text {
-        font-size: 3.5em; 
+        font-size: 1.85em; 
     } 
 
     .top-of-page nav .left-nav h3 {
-        font-size: 3.75em; 
+        font-size: 2em; 
     }
 
     .bottom-nav .bottom-left {
@@ -779,90 +787,31 @@ a {
     .bottom-nav .bottom-right {
         width: 40%; 
         display: grid;  
-        font-size: 2.75em; 
+        font-size: 1.5em; 
     }
 
     .top-of-page nav {
-        height: 150px; 
+        height: 75px; 
     }
 
     .top-of-page nav .right-nav {
         justify-content: space-evenly;
-        font-size: 3em; 
+        font-size: 1.75em; 
     }
 
     .main-page .nav-open-up .bottom-nav-container div a {
-        font-size: 3em; 
-    }
-}
-
-@media only screen and (min-width: 4001px) {
-    .top-of-page .center-box-div {
-        justify-content: flex-end;
-    }
-
-    .top-of-page .center-box-div .center-box {
-        margin-right: 75px; 
-        width: 55%; 
-    }
-
-    .top-of-page .center-box-div .center-box p {
-        font-size: 4.5em; 
-        line-height: 1.5em; 
-    }
-
-    button {
-        width: 750px; 
-        height: 175px; 
-        font-weight: 100; 
-        font-size: 3.75em; 
-    }
-
-    .middle-page-container .img-select-div {
-        height: 800px; 
-        width: 45%; 
-    }
-
-    .middle-page-container .img-select-div .img-text-overlay {
-        font-size: 5.25em; 
-    }
-
-    .bottom-top-text {
-        font-size: 4em; 
-    }
-
-    .bottom-middle-text {
-        font-size: 5em; 
-    }
-
-    .bottom-bottom-text {
-        font-size: 4em; 
-    } 
-
-    .top-of-page nav .left-nav h3 {
-        font-size: 4.25em; 
+        font-size: 2em; 
     }
 
     .bottom-nav .bottom-left {
-        width: 40%; 
+        width: 20%; 
     }
 
     .bottom-nav .bottom-right {
-        width: 40%; 
-        display: grid;  
-        font-size: 3.5em; 
+        width: 20%; 
     }
 
-    .top-of-page nav {
-        height: 175px; 
-    }
-
-    .top-of-page nav .right-nav {
-        justify-content: space-evenly;
-        font-size: 3.5em; 
-    }
-
-    .main-page .nav-open-up .bottom-nav-container div a {
-        font-size: 3.25em; 
+    .middle-page-container .img-select-div {
+        width: 35%; 
     }
 }

@@ -10,7 +10,7 @@ function PageContainer() {
         <BrowserRouter>
             <Switch>
 
-                <Redirect exact from="/Hy-Wave" to="/HyWave/home" />
+                <Redirect exact from="/Hy_Wave" to="/HyWave/home" />
                     
                 <Route path="/HyWave/home" component={Main} /> 
 
